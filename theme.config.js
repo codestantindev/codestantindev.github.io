@@ -26,8 +26,11 @@ const themeConfig = {
       titleTemplate: "%s – NTTS",
     };
   },
+  primaryHue: 224,
+  primarySaturation: 86,
   toc: {
     float: true,
+    backToTop: true,
     title: () => useLocalesMap(tableOfContentsTitleMap),
   },
   search: {
@@ -108,24 +111,7 @@ const themeConfig = {
       </>
     );
   },
-  footer: {
-    text: () => {
-      const { utmSource, text, suffix } = useLocalesMap(footerTextMap);
-
-      return (
-        <a
-          href={`https://discord.com/invite/ntts/?utm_source=${utmSource}`}
-          target="_blank"
-          rel="noopener"
-          className="inline-flex items-center no-underline text-current font-semibold"
-        >
-          <span>
-            <Ntts />
-          </span>
-        </a>
-      );
-    },
-  },
+  footer: "",
 
   gitTimestamp({ timestamp }) {
     const { locale } = useRouter();
