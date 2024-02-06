@@ -3,12 +3,27 @@ title: No Text To Speech
 ---
 
 import { Callout } from 'nextra-theme-docs'
-import Features from 'components/features'
-import { Bleed } from 'nextra-theme-docs'
+import { Bleed, Card, Cards } from 'nextra-theme-docs'
 
 {
 // wrapped with {} to mark it as javascript so mdx will not put it under a p tag
 }
 {<h1 className="text-center text-4xl tracking-tighter font-extrabold md:text-5xl mt-8">NTTS</h1>}
 
-<Bleed><Features/></Bleed>
+<Bleed>
+<Cards>
+  <Card
+    title="Rules"
+    href="rules"
+  ></Card>
+  <Card    
+    title="Discord"
+    href="https://discord.com/invite/B46HXK5fZm"
+  ></Card>
+  <Card
+    title="FAQ"
+    href="faq"
+  ></Card>
+</Cards>
+
+</Bleed>
